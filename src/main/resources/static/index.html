@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enterprise Banking - Secure digital banking">
+    <title>Enterprise Banking | Secure Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="/">
+        <span class="brand-icon">E</span>
+        <span>Enterprise<span class="brand-light">Banking</span></span>
+    </a>
+    <div class="security-label">
+        <span class="security-dot"></span>
+        Secure Banking Portal
+    </div>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-panel">
+        <div class="welcome-content">
+            <span class="eyebrow">YOUR MONEY. YOUR CONTROL.</span>
+            <h1>Banking made<br>simpler and smarter.</h1>
+            <p>
+                Access your accounts, manage your transactions
+                and take control of your finances through one
+                secure digital banking experience.
+            </p>
+
+            <div class="feature-list">
+                <div>✓ &nbsp; Account overview and statements</div>
+                <div>✓ &nbsp; Secure fund transfer experience</div>
+                <div>✓ &nbsp; Manage beneficiaries and services</div>
+            </div>
+        </div>
+        <div class="welcome-footer">
+            A modern digital banking experience
+        </div>
+    </section>
+
+    <section class="login-panel">
+        <div class="login-card">
+            <div class="mobile-brand">Enterprise Banking</div>
+
+            <span class="login-eyebrow">WELCOME BACK</span>
+            <h2>Sign in to your account</h2>
+            <p class="login-description">
+                Enter your credentials to access your banking dashboard.
+            </p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="customerId">Customer ID</label>
+                    <input
+                        type="text"
+                        id="customerId"
+                        name="customerId"
+                        placeholder="Enter your customer ID"
+                        autocomplete="username"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <div class="password-heading">
+                        <label for="password">Password</label>
+                        <a href="#" class="text-link">Forgot password?</a>
+                    </div>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <button class="login-button" type="submit">
+                    Sign In
+                    <span>→</span>
+                </button>
+            </form>
+
+            <p class="preview-note">
+                Login authentication will be enabled after backend integration.
+            </p>
+
+            <div class="login-divider"></div>
+
+            <div class="support-text">
+                Need assistance? <a href="#" class="text-link">Contact support</a>
+            </div>
+
+            <div class="security-note">
+                <span>▣</span>
+                Your banking session will be protected by secure authentication.
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <span>© 2026 Enterprise Banking Demo</span>
+    <span>Privacy &nbsp; · &nbsp; Security &nbsp; · &nbsp; Help</span>
+</footer>
+
+<script src="/js/login.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Banking | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/dashboard.js" defer></script>
+</head>
+<body>
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <div>
+                <p class="dashboard-brand">ENTERPRISE BANKING</p>
+                <h1>Customer Dashboard</h1>
+            </div>
+            <button id="logoutButton" class="logout-button" type="button">
+                Logout
+            </button>
+        </header>
+
+        <section class="dashboard-welcome">
+            <p>WELCOME BACK</p>
+            <h2 id="customerName">Loading customer...</h2>
+            <span id="customerNumber"></span>
+        </section>
+
+        <section class="dashboard-card">
+            <h2>Customer Profile</h2>
+            <div class="profile-grid">
+                <div>
+                    <span>Customer ID</span>
+                    <strong id="profileCustomerId">Loading...</strong>
+                </div>
+                <div>
+                    <span>Email</span>
+                    <strong id="profileEmail">Loading...</strong>
+                </div>
+                <div>
+                    <span>Mobile Number</span>
+                    <strong id="profileMobile">Loading...</strong>
+                </div>
+                <div>
+                    <span>Customer Status</span>
+                    <strong id="profileStatus">Loading...</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-card">
+            <h2>Account Overview</h2>
+            <p>Bank account management is not yet implemented in this demo.</p>
+            <p class="dashboard-note">
+                Account balances and transactions will appear here when
+                account and transaction modules are implemented.
+            </p>
+        </section>
+
+        <p id="dashboardStatus" class="login-status" role="status"></p>
+    </main>
+</body>
+</html>

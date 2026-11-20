@@ -22,7 +22,7 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf
                 .csrfTokenRepository(
-                    CookieCsrfTokenRepository.withHttpOnlyFalse()
+                    new CookieCsrfTokenRepository()
                 )
                 .csrfTokenRequestHandler(
                     new CsrfTokenRequestAttributeHandler()
